@@ -12,7 +12,6 @@ Provides info on the commands within this repo, including Name, Description and 
 
 > PS > Get-CustomCommand
 > Name                 Description
-> ----                 -----------
 > Get-CustomCommand    Provides info on Custom Commands
 
 > PS > Get-CustomCommand -Name Get-CustomCommand

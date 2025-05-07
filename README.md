@@ -8,7 +8,7 @@ The Major tools are compaitable with Get-Help, and Get-Help -Example.
 ## Get-CustomCommand   
 Provides info on the commands within this repo, including Name, Description and Example. 
 
-### Examples: Get-GroupPolicy [[-Path] <String>] [[-Name] <String>] [<CommonParameters>]
+#### Examples: Get-GroupPolicy [[-Path] <String>] [[-Name] <String>] [<CommonParameters>]
 
 PS > Get-CustomCommand
 Name                 Description

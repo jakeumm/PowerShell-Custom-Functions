@@ -5,7 +5,7 @@ Custom command line tools I've developed
 # Overview of Tools
 The Major tools are compaitable with Get-Help, and Get-Help -Example. 
 
-## Get-CustomCommand   
+### Get-CustomCommand   
 Provides info on the commands within this repo, including Name, Description and Example. 
 
 #### Examples: Get-GroupPolicy [[-Path] <String>] [[-Name] <String>] [<CommonParameters>]
@@ -23,10 +23,10 @@ function Get-CustomCommand {
 
 
 
-## Copy-Path
+### Copy-Path
 Copies the full path of a file/folder to the clipboard with quotations 
 
-### Copy-Path Examples
+#### Copy-Path Examples
 C:\Path\To> Copy-Path
 "C:\Path\To"
 
@@ -39,10 +39,10 @@ C:\Path\To> Copy-Path .\folder\
 
 
 
-## Get-GroupPolicy
+### Get-GroupPolicy
 One liner to capture a GPResult report and open it
 
-### Examples: Get-GroupPolicy [[-Path] <String>] [[-Name] <String>] [<CommonParameters>]
+#### Examples: Get-GroupPolicy [[-Path] <String>] [[-Name] <String>] [<CommonParameters>]
 PS > Get-GroupPolicy 
 Refreshes policy and writes the report to %AppData%\Local\Custom-Functions\Get-GroupPolicy
 
@@ -54,23 +54,23 @@ Refreshes policy and writes the report to C:\Temp\My-GP.html'
 
 
 
-## Get-PSHistory
+### Get-PSHistory
 Retrieves PowerShell command history from the PSReadLine history file and allows filtering by pattern.
 
-### Examples:  Get-PSHistory Get-PSHistory [[-Pattern] <String>] [-History <Int32>] [-Help] [<CommonParameters>]
+#### Examples:  Get-PSHistory Get-PSHistory [[-Pattern] <String>] [-History <Int32>] [-Help] [<CommonParameters>]
 PS > Get-PSHistory
 PS > Get-PSHistory "test"
 PS > Get-PSHistory -Pattern "test" -History 100
 
 
-## Search-ChildItem    
+### Search-ChildItem    
 Like Get-ChildItem –Recurse, but
     * quietly skips “Access denied” paths
     * lets you cap recursion depth
     * returns only LastWriteTime and FullName
 
 
-### Examples: Search-ChildItem [[-Pattern] <String[]>] [-Path <String>] [-Depth <Int32>] [<CommonParameters>]
+#### Examples: Search-ChildItem [[-Pattern] <String[]>] [-Path <String>] [-Depth <Int32>] [<CommonParameters>]
 PS > Search-ChildItem  *pdf
 PS > Search-ChildItem -Path 'C:\Temp' 'foo*'
 PS > Search-ChildItem -Depth 3 'foo*pdf|foo*txt'
@@ -81,11 +81,11 @@ PS > Search-ChildItem -Depth 3 'foo*pdf|foo*txt'
 ## Other Small Changes 
 Small changes will not add/update Get-Help
 
-### cd                  
+#### cd                  
 Enabled changing directory to shortcut path
 PS> cd ./shortcut.lmk
 
-### findstr
+#### findstr
 Flips "/I" in findstr, making it case insensitive by default, and case sentitive with flag
 cat file.txt | findstr word
 "this Is a WOrD"
@@ -96,21 +96,21 @@ cat file.txt | findstr /I word
 
 
 
-### md5sum
+#### md5sum
 Alias of Get-FileHash -Algorithm MD5
 md5sum ./file.txt
 Hash                                Path
 ----                                ----
 1D97AA02CB2083870AE8F2DC3AE76E66    C:\Path\file.txt
 
-### Notepad
+#### Notepad
 notepad runs notepad++.exe instead of notepad.exe. Must have notepad++ installed at "C:\Program Files\Notepad++\notepad++.exe"
 notepad ./file.txt
 
 You can still use default notepad by adding.exe
 Notepad.exe ./file.txt
 
-### pwd
+#### pwd
 pwd only outputs directory, and auto-copies clipboard
 pwd
 

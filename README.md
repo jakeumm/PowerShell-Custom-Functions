@@ -10,15 +10,15 @@ Provides info on the commands within this repo, including Name, Description and 
 
 #### Examples: Get-GroupPolicy [[-Path] <String>] [[-Name] <String>] [<CommonParameters>]
 
-PS > Get-CustomCommand
-Name                 Description
-----                 -----------
-Get-CustomCommand    Provides info on Custom Commands
+> PS > Get-CustomCommand
+> Name                 Description
+> ----                 -----------
+> Get-CustomCommand    Provides info on Custom Commands
 
-PS > Get-CustomCommand -Name Get-CustomCommand
-function Get-CustomCommand {
-      Example Code
-      }
+> PS > Get-CustomCommand -Name Get-CustomCommand
+> function Get-CustomCommand {
+      > Example Code
+      > }
 
 
 

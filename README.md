@@ -1,6 +1,17 @@
 # PowerShell-Custom-Functions
 Custom command line tools I've developed
 
+# Install  
+1. Download & extract zip to folder where scripts will live.
+         **Example: "C:\Scripts\PowerShell-Custom-Functions\"**
+2. Open `PowerShell-Custom-Functions\Add-to-Profile.txt`
+3. Update $CUSTOMCOMMANDSPATH 
+         **Example: $CUSTOMCOMMANDSPATH = "C:\Scripts\PowerShell-Custom-Functions\"**
+4. Save
+5. Copy all text from Add-to-Profile.txt
+6. From powershell using: `notepad $PROFILE`
+8. Paste contents into `$PROFILE`
+9. Save & Restart PowerShell 
 
 # Overview of Tools
 The Major tools are compaitable with Get-Help, and Get-Help -Example. 
@@ -26,7 +37,7 @@ Provides info on the commands within this repo, including Name, Description and 
 Copies the full path of a file/folder to the clipboard with quotations 
 
 #### Copy-Path Examples
-C:\Path\To> Copy-Path
+`C:\Path\To> Copy-Path`
 "C:\Path\To"
 
 C:\Path\To> Copy-Path .\file.txt

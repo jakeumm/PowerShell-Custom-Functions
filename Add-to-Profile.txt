@@ -1,0 +1,22 @@
+##########################################################################################
+##################################### Custom Scripts #####################################
+##########################################################################################
+$CUSTOMCOMMANDSPATH = "REPLACE WITH PATH TO EXTRACTED ZIP"
+."$CUSTOMCOMMANDSPATH\Copy-Path\Copy-Path.ps1"
+."$CUSTOMCOMMANDSPATH\Get-CustomCommand\Get-CustomCommand.ps1"
+."$CUSTOMCOMMANDSPATH\Get-GroupPolicy\Get-GroupPolicy.ps1"
+."$CUSTOMCOMMANDSPATH\Get-PSHistory\Get-PSHistory.ps1"
+."$CUSTOMCOMMANDSPATH\Search-ChildItem\Search-ChildItem.ps1"
+
+#alias
+."$CUSTOMCOMMANDSPATH\z-alias\grep.ps1"
+."$CUSTOMCOMMANDSPATH\z-alias\notepad.ps1"
+
+#misc
+."$CUSTOMCOMMANDSPATH\z-misc\cd.ps1"
+."$CUSTOMCOMMANDSPATH\z-misc\Enhanced-Autocomplete.ps1"
+."$CUSTOMCOMMANDSPATH\z-misc\findstr.ps1"
+."$CUSTOMCOMMANDSPATH\z-misc\md5sum.ps1"
+."$CUSTOMCOMMANDSPATH\z-misc\psexe.ps1"
+."$CUSTOMCOMMANDSPATH\z-misc\pwd.ps1"
+##################################### Custom Scripts #####################################

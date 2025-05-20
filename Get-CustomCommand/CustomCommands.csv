@@ -1,0 +1,12 @@
+Name,Description,Example,FilePath
+Copy-Path,Copies FilePath, Copy-Path ./file.txt,"\PowerShell-Custom-Functions\Copy-Path\Copy-Path.ps1"
+Get-CustomCommand,Provides info on Custom Commands,Get-CustomCommand -Name pwd,"\PowerShell-Custom-Functions\Get-CustomCommand\Get-CustomCommand.ps1"
+Get-GroupPolicy,One liner to capture a GPResult report and open it,Get-GroupPolicy,,"\PowerShell-Custom-Functions\Get-GroupPolicy\Get-GroupPolicy.ps1"
+Get-PSHistory,Get Powershell History, Get-PSHistory -Pattern "test" -History 10,"\PowerShell-Custom-Functions\Get-PSHistory\Get-PSHistory.ps1"
+Search-ChildItem,Like Get-ChildItem –Recurse but quietly skips “Access denied” paths; lets you cap recursion depth;* returns only LastWriteTime and FullName,Search-ChildItem -Path 'C:\Temp' 'foo*',"\PowerShell-Custom-Functions\Search-ChildItem\Search-ChildItem.ps1"
+notepad,Replaces notepad.exe with Notepad++.exe,notepad ./file.txt,"\PowerShell-Custom-Functions\z-alias\notepad.ps1"
+cd,Enabled changing directory to shortcut path,cd path-to-shortcut.lnk,"\PowerShell-Custom-Functions\z-misc\cd.ps1" 
+findstr,Automatically applies /I to findstr.exe making it case insensitive,cat ./file.txt | findstr caseINSENSITIVE,"\PowerShell-Custom-Functions\z-misc\findstr.ps1" 
+md5sum,So you don't have to Get-FileHash -Algorithm,md5sum ./file.txt,"\PowerShell-Custom-Functions\z-misc\md5sum.ps1"
+psexe,Defines path to psexe64.exe,psexe \pc01 script.ps1,"\PowerShell-Custom-Functions\z-misc\psexe.ps1" 
+pwd,Auto-Copy pwd to clipboard,pwd,"\PowerShell-Custom-Functions\z-misc\pwd.ps1"
